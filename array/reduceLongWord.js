@@ -16,3 +16,5 @@ const words = [
 // filter와 join을 써서 같은 결과를 만드는 것도 연습문제..
 const longWords = words.reduce((a, w) => w.length > 6 ? a + " " + w : a, "").trim();
 console.log(longWords);
+// 해결
+console.log(words.filter(w => w.length > 6).join(' '));
